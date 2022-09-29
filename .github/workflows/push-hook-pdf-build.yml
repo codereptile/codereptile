@@ -1,0 +1,42 @@
+on: [push]
+jobs:
+  BuildPDF:
+    runs-on: ubuntu-20.04
+    name: Build PDF from .tex
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Build PDF builder
+        run: docker build -t pdfbuilder .
+      - name: Build PDF
+        run: docker run --mount src=`pwd`/resume,target=/resume,type=bind pdfbuilder
+      - uses: actions/upload-artifact@v2
+        with:
+          name: resume
+          path: resume/resume_artem_ageev.pdf
+          retention-days: 1
+
+  PublishPDF:
+    needs: BuildPDF
+    runs-on: ubuntu-20.04
+    name: Publish PDF to Github Pages
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+        with:
+          ref: to_show_in_pages
+      - name: Prepare to upload
+        run: |
+          git config user.name 'Artem Ageev'
+          git config user.email 'codereptile@yandex.ru'
+      - name: Remove existing resume
+        run: rm resume_artem_ageev.pdf
+      - name: Download resume from builder
+        uses: actions/download-artifact@v2
+        with:
+          name: resume
+      - name: Push resume to Pages
+        run: |
+          git add resume_artem_ageev.pdf
+          git commit -m "Push resume from CI"
+          git push --set-upstream origin to_show_in_pages
