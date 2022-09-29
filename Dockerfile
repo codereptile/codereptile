@@ -6,7 +6,9 @@ RUN apt-get update                                  \
     && apt-get install -y texlive-latex-base        \
                           texlive-fonts-recommended \
                           texlive-fonts-extra       \
-                          texlive-latex-extra
+                          texlive-latex-extra       \
+                          texlive-bibtex-extra      \
+                          biber
 
 CMD pdflatex                                        \
     -interaction=nonstopmode                        \
