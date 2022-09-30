@@ -1,7 +1,7 @@
 on: [push]
 jobs:
   BuildPDF:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     name: Build PDF from .tex
     steps:
       - name: Check out repository code
@@ -18,7 +18,7 @@ jobs:
 
   PublishPDF:
     needs: BuildPDF
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     name: Publish PDF to Github Pages
     steps:
       - name: Check out repository code
