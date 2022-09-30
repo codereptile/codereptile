@@ -24,7 +24,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
         with:
-          ref: to_show_in_pages
+          ref: pages_build
       - name: Prepare to upload
         run: |
           git config user.name 'Artem Ageev'
@@ -39,4 +39,4 @@ jobs:
         run: |
           git add resume_artem_ageev.pdf
           git commit -m "Push resume from CI"
-          git push --set-upstream origin to_show_in_pages
+          git push --set-upstream origin pages_build
