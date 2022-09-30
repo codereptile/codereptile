@@ -18,7 +18,7 @@ My main project is the [code visualizer](https://github.com/codereptile/visualiz
 ## Languages and tools:
 <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=codereptile&layout=compact&theme=aura&hide_border=true"/>
 
-I prefer using C++ and Python.
+I prefer using C/C++ and Python.
 
 Worked with CI/CD and Docker (see my [telegram-bot](https://github.com/codereptile/codereptile_cryptography_bot)).
 
