@@ -2,7 +2,7 @@
 <h1 align="center">Hi 👋, I'm Artem Ageev (a.k.a. codereptile)!</h1>
 <p>
 <a href="https://codereptile.github.io/codereptile/resume_artem_ageev.pdf">
-<h2 align="center">My resume</h2>
+My resume
 </a>
 </p>
 
