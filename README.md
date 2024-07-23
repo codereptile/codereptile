@@ -8,8 +8,8 @@ My resume
 
 ## About me:
 
-[![YouTube](https://img.shields.io/youtube/channel/subscribers/UCCwBxTgq5AFtSIaTllFRUKQ?style=for-the-badge&label=My+youtube)](https://www.youtube.com/c/CodeReptile)
-[![YouTube](https://img.shields.io/youtube/channel/subscribers/UCa51fHSa9D-0Wn8z-JWjtsA?style=for-the-badge&label=My+youtube)](https://www.youtube.com/@CodeReptileEng)
+[![YouTube](https://img.shields.io/youtube/channel/subscribers/UCCwBxTgq5AFtSIaTllFRUKQ?style=for-the-badge&label=RU+youtube)](https://www.youtube.com/c/CodeReptile)
+[![YouTube](https://img.shields.io/youtube/channel/subscribers/UCa51fHSa9D-0Wn8z-JWjtsA?style=for-the-badge&label=ENG+youtube)](https://www.youtube.com/@CodeReptileEng)
 [![Discord](https://img.shields.io/discord/790643218953011220?style=for-the-badge&label=My+Discord)](https://discord.com/invite/e5vCkfZpNJ)
 
 I like Cryptography, Drones and Math.
