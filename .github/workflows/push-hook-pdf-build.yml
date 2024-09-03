@@ -32,7 +32,7 @@ jobs:
       - name: Remove existing resume
         run: rm resume_artem_ageev.pdf
       - name: Download resume from builder
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: resume
       - name: Push resume to Pages
