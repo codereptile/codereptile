@@ -5,12 +5,12 @@ jobs:
     name: Build PDF from .tex
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Build PDF builder
         run: docker build -t pdfbuilder .
       - name: Build PDF
         run: docker run --mount src=`pwd`/resume,target=/resume,type=bind pdfbuilder
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: resume
           path: resume/resume_artem_ageev.pdf
@@ -22,7 +22,7 @@ jobs:
     name: Publish PDF to Github Pages
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ref: pages_build
       - name: Prepare to upload
@@ -30,13 +30,14 @@ jobs:
           git config user.name 'Artem Ageev'
           git config user.email 'codereptile@yandex.ru'
       - name: Remove existing resume
-        run: rm resume_artem_ageev.pdf
+        run: rm -f resume_artem_ageev.pdf
       - name: Download resume from builder
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: resume
+          path: .
       - name: Push resume to Pages
         run: |
           git add resume_artem_ageev.pdf
-          git commit -m "Push resume from CI"
+          git commit -m "Push resume from CI" || true
           git push --set-upstream origin pages_build
