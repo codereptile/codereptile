@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{altacv}
 
-\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+\geometry{left=1cm,right=8cm,marginparwidth=5.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -15,68 +15,81 @@
 \renewcommand{\ratingmarker}{\faCircle}
 
 %% sample.bib contains your publications
-\addbibresource{sample.bib}
+%% \addbibresource{sample.bib}
 
 \begin{document}
-	
-\name{Artem Ageyev}
-\tagline{Backend developer / Teacher / Youtuber}
-\photo{2.5cm}{photo.png}
-\personalinfo{%
-	\email{codereptile@yandex.ru}
-	\phone{+7(909)-935-47-72}
-	\;\;\;\;\;
-	\phone{+1(929)-594-89-73}
-	\;\;\;\;\;
-	\location{Moscow, Russia}
-	\;\;\;\;\;\;\;\;\;\;\;
-	\github{github.com/codereptile}
-	\youtube{Code Reptile}
-}
 
-\begin{adjustwidth}{}{-8cm}
+    \name{Artem Ageyev}
+    \tagline{C++ Backend developer}
+    \photo{2.5cm}{photo.png}
+    \personalinfo{%
+        \email{codereptile@yandex.ru}
+        \phone{+1(929)-594-89-73}
+        \;\;\;\;\;
+        \phone{+7(909)-935-47-72}
+        \;\;\;\;\;
+        \location{Belgrade Serbia}
+        \;\;\;\;\;\;\;\;\;\;\;
+        \github{github.com/codereptile}
+        \youtube{Code Reptile}
+    }
+
+    \begin{adjustwidth}{}{-8cm}
 	\makecvheader
-\end{adjustwidth}
-	
-%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
-\cvsection[page1sidebar]{Education}
+    \end{adjustwidth}
 
-\cvevent{School of programmers}{Major: informatics}{2017 -- 2019}{Moscow, Russia}
-	
-GPA: 5-/5
-	
-\divider
+    %% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+    \cvsection[page1sidebar]{Education}
 
-\cvevent{Lyceum at the Higher School of Economics / HSE Lyceum}{Major: Mathematics and Computer Science}{September 2018 -- July 2020}{Moscow, Russia}
+    \cvevent{National Research University Higher School of Economics}{Major: Applied Mathematics and Information Science}{September 2020 -- June 2025}{Moscow, Russia}
 
-\divider
+    GPA: 4.13/5
 
-\cvevent{National Research University Higher School of Economics}{Major: Applied Mathematics and Information Science}{September 2020 -- June 2025}{Moscow, Russia}
-	
-GPA: 4.13/5
-	
-\cvsection{Work experience}
+    \cvsection{Work experience}
 
-\cvevent{Software Developer}{Yandex}{Apr 2023 - present (2.5y+)}{Belgrade, Serbia}
+    \cvevent{C++ Software Developer}{Yandex}{Apr 2023 - present (2.5y+)}{Belgrade, Serbia}
 
-04.2023-10.2024 (~18 months) - Backend developer for Yandex Products.
-10.2024-now - Big data engineer/Backend developer for Yandex image search.
+    04.2023-10.2024 - \textbf{C++ Backend dev for Yandex Products}
 
-\divider
+    Developing latency-critical product search algorithms in C++.
+    Implementing new functionality in large codebases (millions LOC).
 
-\cvevent{Software Test Engineer}{Kaspersky}{Jul 2022 - Sep 2022 (0.25y)}{Moscow, Russia}
+    \textbf{Notable project:} AI-based product search with LLM suggestions and answers.
 
-Test automation in C/C++ for Kaspersky AV SDK. Manual testing \& test design. Worked as an intern, had to quit due to relocation.
+    \;
 
-\divider
+    10.2024-now - \textbf{Big data engineer/Backend developer for image search.}
 
-\cvevent{Lecturer (6 courses in total)}{Department of Informatics of the Olympiad Schools, MIPT}{Mar 2020 - May 2021 (1.25y)}{Moscow, Russia}
+    Developing and maintaining build infrastructure for a multi-Petabyte database of images.
+    Optimization of C++ map-reduce processing, Python scripting.
 
-300 hours of lectures on topics of competitive programming (C/C++) and information security (Linux, C/C++, Python).
+    \textbf{Notable project:} Integration testing for the entire build process, allowing per-commit error search.
 
-\divider
+    \textbf{Notable project:} Improved image garbage collection, saving 40\% of disk space.
 
-\cvevent{Assistant (Checking homework, general help)}{HSE Lyceum}{2021-2022 (2y)}{Moscow, Russia}
+    \divider
 
+    \cvevent{C++ developer/DevOps}{Aria group trading}{Sep 2022 - Apr 2023 (0.5y)}{Remote}
+
+    C++ development for low-latency trading system.
+    Implementation of trading algorithms and market connectors.
+    Runtime profiling, stress-testing and optimization.
+
+    \;
+
+    Linux server management and monitoring systems.
+
+    \divider
+
+    \cvevent{Software Test Engineer}{Kaspersky}{Jul 2022 - Sep 2022 (0.25y)}{Moscow, Russia}
+
+    Test automation in C/C++ for Kaspersky AV SDK. Manual testing \& test design.
+    Worked as an intern, had to quit due to relocation.
+
+    \divider
+
+    \cvevent{Lecturer (6 courses in total)}{Department of Informatics of the Olympiad Schools, MIPT}{Mar 2020 - May 2021 (1.25y)}{Moscow, Russia}
+
+    300 hours of lectures on topics of competitive programming (C/C++) and information security (Linux, C/C++, Python).
 
 \end{document}

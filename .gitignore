@@ -1,4 +1,9 @@
-resume/build/
+resume/build/*.log
+resume/build/*.aux
+resume/build/*.bcf
+resume/build/*.out
+resume/build/*.xml
+resume/build/*.gz
 
 # Created by https://www.toptal.com/developers/gitignore/api/pycharm+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=pycharm+all
